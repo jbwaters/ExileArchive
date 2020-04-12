@@ -368,4 +368,7 @@ Make sure you set the appropriate file path in your CfgExileCustomCode if it is 
 
 Note: This will NOT require any﻿ changes to Advanced Sling Load, IgiLoad, R3F or any other logistics script needed to transport crates to the Waste Dump trader.
 
-Enjoy!﻿﻿
+Enjoy!
+
+For those who don't know where to find the server side file here is the path :
+your-server-directory/@ExileServer/addons/exileserver.pbo -> file are inside the pbo in the "code" folder.
