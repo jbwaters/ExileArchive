@@ -4,7 +4,7 @@ You will need to modify two client-side files and one server side file. Addition
  
 
 Client-Side File: ExileClient_gui_traderDialog_updateInventoryDropdown.sqf
-```
+```sqf
 private["_dialog","_inventoryDropdown","_index","_nearVehicles","_crateTypes"];﻿
 disableSerialization;
 _crateTypes = [
@@ -115,7 +115,7 @@ true
 ```
 
 Client-Side File: ExileClient_gui_wasteDumpDialog_show.sqf
-```
+```sqf
 private["_nearVehicles","_localVehicles","_display","_revenue","_sellButton","_dropdown","_vehicleObject","_vehicleName","_index","_crateTypes"];﻿
 disableSerialization;
 _crateTypes = [
