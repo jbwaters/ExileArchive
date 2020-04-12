@@ -3,7 +3,7 @@ This will allow you to sell a crate (or the contents of the crate) directly to t
 You will need to modify two client-side files and one server side file. Additionally, you will need to include these three files in the CfgExileCustomCode.
  
 
-Client-Side File: ExileClient_gui_traderDialog_updateInventoryDropdown.sqf
+**Client-Side File: ExileClient_gui_traderDialog_updateInventoryDropdown.sqf**
 ```sqf
 private["_dialog","_inventoryDropdown","_index","_nearVehicles","_crateTypes"];﻿
 disableSerialization;
@@ -114,7 +114,7 @@ forEach _nearVehicles;
 true
 ```
 
-Client-Side File: ExileClient_gui_wasteDumpDialog_show.sqf
+**Client-Side File: ExileClient_gui_wasteDumpDialog_show.sqf**
 ```sqf
 private["_nearVehicles","_localVehicles","_display","_revenue","_sellButton","_dropdown","_vehicleObject","_vehicleName","_index","_crateTypes"];﻿
 disableSerialization;
@@ -223,7 +223,7 @@ true call ExileClient_gui_postProcessing_toggleDialogBackgroundBlur;
 true
 ```
 
-Server-Side File: ExileServer_system_trading_network_wasteDumpRequest.sqf
+**Server-Side File: ExileServer_system_trading_network_wasteDumpRequest.sqf**
 ```sqf
 private["_sessionID","_parameters","_vehicleNetID","_mode","_vehicleObject","_vehicleDB﻿ID","_playerObject","_cargo","_revenue","_playerMoney","_respectGain","_playerRespect","_logging","_traderLog","_responseCode","_crateTypes"];
 _sessionID = _this select 0;
@@ -370,5 +370,7 @@ Note: This will NOT require any﻿ changes to Advanced Sling Load, IgiLoad, R3F 
 
 Enjoy!
 
+
+**Tips**
 For those who don't know where to find the server side file here is the path :
-your-server-directory/@ExileServer/addons/exileserver.pbo -> file are inside the pbo in the "code" folder.
+`./@ExileServer/addons/exileserver.pbo` -> file are inside the pbo in the "code" folder.
